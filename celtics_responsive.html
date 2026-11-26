@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap');
+
+      body {
+        font-family: 'Archivo Narrow', sans-serif;
+        margin: 0;
+        padding: 10px;
+        background: white;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        color: #555555;
+        margin: 0 0 16px 0;
+      }
+
+      .graphic-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .graphic-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      @media (max-width: 1200px) {
+        .graphic-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 850px) {
+        .graphic-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 500px) {
+        .graphic-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+</head>
+<html>
+  <body>
+    <h1>How the Celtics win the 3-point battle</h1>
+    <p class="subtitle">Celtics' results by 3-point attempt volume and shooting percentage relative to their opponents.</p>
+    <div class="graphic-grid">
+      <img src="season_2023.svg" alt="season_2023"/>
+      <img src="season_2024.svg" alt="season_2024"/>
+      <img src="season_2025.svg" alt="season_2025"/>
+      <img src="season_2026.svg" alt="season_2026"/>
+      <img src="season_2027.svg" alt="season_2027"/>
+    </div>
+  </body>
+</html>
+</html>
